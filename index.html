@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center;">
+    <div class="container-fluid" style="text-align: center;padding: 50px; border: 3px solid yellow; background-color: black;">
+     <div style="color: #e0a800; font-size: 40px;">STOP WATCH</div>
+     
+        <div class="word">
+<h1 id="minutes">00</h1>
+<h1 id="second">00</h1>
+<h1 id="msec">00</h1>
+
+
+        </div>
+    <div class="container">
+        <button id="abc" onclick="start()" type="button" class="btn btn-outline-warning btn-lg" style="margin-right: 10px;">START</button>
+        <button onclick="stop()" type="button" class="btn btn-outline-warning  btn-lg" style="margin-right: 10px;">STOP</button>
+        <button onclick="reset()" type="button" class="btn btn-outline-warning btn-lg">RESET</button>
+    </div>
+    <div style="padding-top: 30px;">
+        <button onclick="record()" type="button" class="btn btn-warning btn-lg " style="width: 30%;">RECORD</button>
+    </div>
+    </div>
+    <div class="container" id="recordings" style="margin-top: 20px;">
+        <h2 style="justify-content: center; display: flex; background-color: #e0a800; color: black;">RECORDS</h2>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
